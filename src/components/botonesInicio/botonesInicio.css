@@ -1,0 +1,92 @@
+.divBotonesInicio {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rtc-space-m);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: var(--rtc-space-m);
+}
+
+.divBotonRetorno{
+padding-bottom: 40px;
+}
+
+
+.botonRetorno {
+  width: 200px;
+  height: 80px;
+  background:  linear-gradient(to right, #ffe045d7, #d53a9fb0);
+  font-size: 25px;
+  border-radius: 12px;
+  border: 1px solid var(--rtc-black);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.botonRetorno:hover {
+  background: var(--rtc-green);
+  width: 200px;
+  height: 70px;
+  box-shadow: 0px 0px 21px 0px rgb(255, 254, 255);
+  background:  linear-gradient(to right, #d53a9fb0, #ffe045d7);
+}
+
+/* .buttonInicio {
+  width: 200px;
+  height: 80px;
+  background:  linear-gradient(to right, #ffe045d7, #d53a9fb0);
+  font-size: 25px;
+  border-radius: 12px;
+  border: 5px solid var(--rtc-mustard);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.buttonInicio:hover {
+  background: var(--rtc-green);
+  width: 220px;
+  height: 90px;
+  box-shadow: 0px 0px 21px 0px rgb(255, 254, 255);
+  background:  linear-gradient(to right, #d53a9fb0, #ffe045d7);
+  transform: perspective(250px) rotateX(360deg);
+} */
+
+.buttonInicio {
+  width: 200px;
+  height: 80px;
+  background: linear-gradient(to right, #ffe045d7, #d53a9fb0);
+  font-size: 25px;
+  border-radius: 12px;
+  border: 5px solid var(--rtc-mustard);
+  transition: width 1s, height 1s, background 1s;
+  cursor: pointer;
+}
+
+.buttonInicio:hover {
+  background: var(--rtc-green);
+  width: 220px;
+  height: 90px;
+  box-shadow: 0px 0px 21px 0px rgb(255, 254, 255);
+  animation: rotateAnimation 3s linear infinite; 
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: perspective(250px) rotateX(0deg);
+  }
+  to {
+    transform: perspective(250px) rotateX(360deg);
+  }
+}
+
+
+@keyframes rotateAnimation {
+  from {
+    transform: perspective(250px) rotateX(0deg); /* Estado inicial de la rotación */
+  }
+  to {
+    transform: perspective(250px) rotateX(360deg); /* Estado final de la rotación */
+  }
+}

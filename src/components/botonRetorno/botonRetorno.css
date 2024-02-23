@@ -1,0 +1,28 @@
+.divBotonRetorno {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rtc-space-m);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: var(--rtc-space-m);
+}
+
+.botonRetorno {
+  width: 200px;
+  height: 80px;
+  background: var(--rtc-pink);
+  color: blue;
+  font-size: 25px;
+  border-radius: 12px;
+  border: 5px solid var(--rtc-mustard);
+ transition: 0.8s;
+ cursor: pointer;
+}
+
+.botonRetorno:hover {
+  background: var(--rtc-green);
+  width: 220px;
+  height: 90px;
+}

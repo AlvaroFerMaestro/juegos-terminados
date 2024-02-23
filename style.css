@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+:root {
+  --rtc-blue: rgb(32, 38, 90);
+  --rtc-orange: rgb(204, 122, 8);
+  --rtc-mustard: rgb(204, 155,8);
+  --rtc-pink: rgb(222, 104, 93);
+  --rtc-green: rgb(116, 143, 17);
+  --rtc-black: black;
+  --rtc-white: white;
+  --rtc-space-xs: 0.5rem;
+  --rtc-space-s: 1rem;
+  --rtc-space-m: 1.5rem;
+  --rtc-space-l: 2rem;
+  --rtc-space-xl: 4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 100%;
+}
+
+body {
+ /*  background-color: var(--rtc-blue); */
+ background-image: url('https://images.pexels.com/photos/4835429/pexels-photo-4835429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat; 
+ height: 100vh;
+ background-attachment: fixed
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: var(--rtc-pink);
+  gap: var(--rtc-space-m);
+}

@@ -1,0 +1,72 @@
+.ahorcadoContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 450px;
+  flex-wrap: wrap;
+  margin: 2rem;
+ 
+}
+
+.ahorcado {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visualizacion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: var(--rtc-space-s);
+}
+
+.visualizacion-palabra {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.letras-usadas {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.resultado {
+  margin-top: 20px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.reiniciar-boton {
+  width: 200px;
+  height: 80px;
+  background:  linear-gradient(to right, #ffe045d7, #d53a9fb0);
+  font-size: 25px;
+  border-radius: 12px;
+  border: 5px solid var(--rtc-mustard);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.reiniciar-boton:hover {
+  background: var(--rtc-green);
+  width: 220px;
+  height: 90px;
+  box-shadow: 0px 0px 21px 0px rgb(255, 254, 255);
+  background:  linear-gradient(to right, #d53a9fb0, #ffe045d7);
+}
+
+svg {
+  overflow: visible;
+  fill: var(--rtc-pink);
+}
+
+line {
+  fill: none;
+  stroke: var(--rtc-pink);
+  stroke-width: 5;
+}
